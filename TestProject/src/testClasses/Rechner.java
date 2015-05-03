@@ -17,5 +17,13 @@ public class Rechner {
 	{
 		return rechenmethode.addieren(zahl1, zahl2);
 	}
+
+	public TestInterface getRechenmethode() {
+		return rechenmethode;
+	}
+
+	public void setRechenmethode(TestInterface rechenmethode) {
+		this.rechenmethode = rechenmethode;
+	}
 	
 }
