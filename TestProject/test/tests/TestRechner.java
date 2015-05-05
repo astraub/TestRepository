@@ -28,6 +28,7 @@ public class TestRechner {
 	
 	@Test
 	public void test() {
+		
 		Mockito.when(rechner.rechnen(1, 2)).thenReturn(1 + 2);
 		
 		int result = rechner.rechnen(1, 2);
@@ -35,7 +36,7 @@ public class TestRechner {
 		assertEquals(3, result);
 		
 		//Verhaltensorientiertes Testen
-		Mockito.verify(rechner).rechnen(1, 2);
+		//Mockito.verify(rechner).rechnen(1, 2);
 	}
 
 }
